@@ -1,0 +1,32 @@
+/* Navbar.css */
+.navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0,0,0,.5)' stroke-width='2' d='M5 6h20M5 14h20M5 22h20'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 0.5rem;
+  }
+  
+  .nav-link {
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  
+  

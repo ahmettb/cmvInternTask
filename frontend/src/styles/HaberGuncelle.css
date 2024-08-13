@@ -1,0 +1,24 @@
+.form-update {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-title {
+    color: black !important; /* !important ekleyerek stilin öncelikli olmasını sağlıyoruz */
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .form-input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .form-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
