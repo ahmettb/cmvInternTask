@@ -37,47 +37,60 @@ const HaberGoruntule: React.FC = () => {
   if (error) return <p>{error}</p>;
 
   return (
+    <>
+      <AnaSayfaNavbar />
+      <section className="dark">
+        <div className="container py-3">
+          <h1 style={{color:"white"}} className="h1 text-center" id="pageHeaderTitle">Haberler</h1>
 
-    <><AnaSayfaNavbar /><section className="dark">
-      <div className="container py-3">
-      <h1 style={{color:"white"}}  className="h1 text-center" id="pageHeaderTitle">Haberler</h1>
-
-        {haberler.map((haber) => (
-          <article className="postcard dark blue" key={haber.id}>
-            <div className="postcard__text">
-              <h1 className="postcard__title blue">{haber.topic}</h1>
-              <div className="button-container text-center" style={{ marginTop: '10px' }}>
-                <button
-                  className="btn btn-outline-light"
-                  onClick={() => handleShowDetails(haber)}
-                >
-                  Haber Detayı Gör
-                </button>
-              </div>
-            </div>
-          </article>
-        ))}
-
-
-        {selectedNew && (
-          <div className="modal show d-block" tabIndex={-1} role="dialog">
-            <div className="modal-dialog" role="document">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title">{selectedNew.topic}</h5>
-                </div>
-                <div className="modal-body">
-                  <p>{selectedNew.content}</p>
-                </div>
-                <div className="modal-footer">
-                  <button type="button" className="btn btn-secondary" onClick={handleCloseModal}>Kapat</button>
+          {haberler.map((haber) => (
+            <article className="postcard dark blue" key={haber.id}>
+              <div style={{color:"white"}} className="postcard__text">
+                <h1 className="postcard__title blue">{haber.topic}</h1>
+                <p className="postcard__subtitle small">
+               
+                </p>
+         
+                <div className="button-container text-center" style={{ marginTop: '10px' }}>
+                  <button
+                    className="btn btn-outline-light"
+                    onClick={() => handleShowDetails(haber)}
+                  >
+                    Haber Detayı Gör
+                  </button>
                 </div>
               </div>
+            </article>
+          ))}
+
+          {selectedNew && (
+            <div className="modal show d-block" tabIndex={-1} role="dialog">
+              <div className="modal-dialog" role="document">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title">{selectedNew.topic}</h5>
+                  </div>
+                  <div className="modal-body" style={{color:"white"}}>
+                    <p>{selectedNew.content}</p>
+                    <p style={{color:"black"}}>Geçerlilik Tarihi: {format(new Date(selectedNew.dateOfValidity), 'dd/MM/yyyy')}</p>
+                    {selectedNew.newsLink && (
+                      <p >
+                        <a  href={selectedNew.newsLink} style={{color: "black"}} target="_blank" rel="noopener noreferrer">
+                        <button className="btn btn-outline-dark">Habere Git</button>  
+                        </a>
+                      </p>
+                    )}
+                  </div>
+                  <div className="modal-footer">
+                    <button type="button" className="btn btn-secondary" onClick={handleCloseModal}>Kapat</button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        )}
-      </div>
-    </section></>
+          )}
+        </div>
+      </section>
+    </>
   );
 }
 

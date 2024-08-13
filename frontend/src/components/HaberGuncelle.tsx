@@ -44,9 +44,9 @@ const NewsUpdate: React.FC = () => {
         topic: news.topic,
         content: news.content,
         dateOfValidity: news.dateOfValidity,
-        newLink: news.newLink,
+        newsLink: news.newsLink,
       };
-      if (!updatedDto.content || !updatedDto.dateOfValidity || !updatedDto.newLink || !updatedDto.topic) {
+      if (!updatedDto.content || !updatedDto.dateOfValidity || !updatedDto.newsLink || !updatedDto.topic) {
         setErrorMessage('Lütfen tüm alanları doldurunuz.');
         return;
       }
@@ -106,7 +106,7 @@ const NewsUpdate: React.FC = () => {
               id="newsLink"
               name="newLink"
               className="form-control form-input"
-              value={news.newLink}
+              value={news.newsLink}
               onChange={handleChange}
             />
           </div>

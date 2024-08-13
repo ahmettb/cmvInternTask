@@ -23,6 +23,7 @@ public class NoticeFactory implements  EventFactory{
                 noticeResponse.setContent(event.getContent());
                 noticeResponse.setImage(((Notice) event).getImage());
                 noticeResponse.setTopic(event.getTopic());
+                noticeResponse.setDateOfValidity(event.getDateOfValidity());
                 noticeResponses.add(noticeResponse);
                 
             }

@@ -23,7 +23,7 @@ const LoginPage: React.FC = () => {
             if (roles.includes('[ADMIN]')) {
                 localStorage.setItem('jwtToken', jwtToken);
                 localStorage.setItem('roles', JSON.stringify(roles));
-                navigate('/admin/news-list'); // Yönetici sayfasına yönlendir
+                navigate('/admin/news-list');
             } else {
                 setMessage('Yetersiz izinler');
             }

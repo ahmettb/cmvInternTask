@@ -82,13 +82,17 @@ public class NewsService {
 
     public List<ResponseNew> getAllNews() {
         try {
+
+
             log.info("Fetching all news");
             List<Event> newList = eventRepository.findAll().stream()
                     .filter(event -> event instanceof News)
                     .toList();
             List<ResponseNew> responseNewList = new ArrayList<>();
             newList.forEach(newItem -> {
+                newItem=(News)newItem;
                 ResponseNew responseNew = modelMapper.map(newItem, ResponseNew.class);
+                responseNew.setNewsLink(((News) newItem).getNewLink());
                 responseNewList.add(responseNew);
             });
             log.info("Fetched {} news items", responseNewList.size());

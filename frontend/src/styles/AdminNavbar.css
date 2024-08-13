@@ -1,4 +1,4 @@
 .nav-item .nav-link.active {
     background-color: rgb(97, 173, 186);
-    color: white; /* İsteğe bağlı, metin rengini beyaz yapar */
+    color: white; 
 }

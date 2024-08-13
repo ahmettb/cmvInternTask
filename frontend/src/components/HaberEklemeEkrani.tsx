@@ -28,7 +28,7 @@ const HaberEkle: React.FC = () => {
       topic: topic,
       content: content,
       dateOfValidity: dateOfValidity,
-      newLink: newsLink,
+      newsLink: newsLink,
     };
 
     try {

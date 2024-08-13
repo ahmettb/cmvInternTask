@@ -21,12 +21,10 @@ const NoticeUpdate: React.FC = () => {
           setNotice(response.data);
 
           if (response.data.id) {
-            // Görseli almak için NoticeService'i kullanıyoruz
             const imageResponse = await NoticeService.getImage(response.data.id);
             const url = URL.createObjectURL(imageResponse.data);
             setImageSrc(url);
 
-            // Blob objesini File objesine dönüştürerek selectedFile olarak ayarlayın
             const file = new File([imageResponse.data], "currentImage.jpg", { type: "image/jpeg" });
             setSelectedFile(file);
           }

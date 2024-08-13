@@ -24,10 +24,10 @@ const NoticeCard: React.FC<NoticeCardProps> = ({ notice, onUpdate, onDelete }) =
         })
         .catch(error => {
           console.error('Görsel yükleme hatası:', error);
-          setImageSrc('default-image.jpg'); // Varsayılan bir resim belirle
+          setImageSrc('default-image.jpg'); 
         });
     } else {
-      setImageSrc('default-image.jpg'); // Varsayılan bir resim belirle
+      setImageSrc('default-image.jpg'); 
     }
   }, [notice.id]);
 

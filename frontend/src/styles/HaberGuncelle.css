@@ -4,7 +4,7 @@
   }
   
   .form-title {
-    color: black !important; /* !important ekleyerek stilin öncelikli olmasını sağlıyoruz */
+    color: black !important; 
     font-weight: bold;
     font-size: 1.2rem;
   }

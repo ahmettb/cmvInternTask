@@ -7,7 +7,7 @@ import "../App.css";
 
 const NoticeList: React.FC = () => {
   const [noticeList, setNoticeList] = useState<Notice[]>([]);
-  const [errorMessage, setErrorMessage] = useState<string | null>(null); // Hata mesajı durumu
+  const [errorMessage, setErrorMessage] = useState<string | null>(null); 
   const navigate = useNavigate();
 
   const fetchNotices = async () => {
@@ -37,7 +37,7 @@ const NoticeList: React.FC = () => {
     if (isConfirmed) {
       try {
         await NoticeService.deleteNotice(id);
-        fetchNotices(); // Duyurular silindikten sonra verileri yeniden yükle
+        fetchNotices(); 
       } catch (error) {
         console.error('Duyuru silinirken hata oluştu', error);
       }

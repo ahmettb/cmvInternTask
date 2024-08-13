@@ -10,5 +10,6 @@ import java.util.Date;
 public class ResponseNew {
     private String topic;
     private  String content;
-
+    private Date dateOfValidity;
+    private String newsLink;
 }

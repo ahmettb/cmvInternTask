@@ -3,11 +3,11 @@ id:number,
 topic:string,
 content:string,
 dateOfValidity: Date;
-newLink: string;
+newsLink: string;
 };
 export interface NewDto {
     topic: string;
     content: string;
     dateOfValidity: Date;
-    newLink: string;
+    newsLink: string;
 };
