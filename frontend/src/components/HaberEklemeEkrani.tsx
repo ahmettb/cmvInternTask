@@ -18,8 +18,8 @@ const HaberEkle: React.FC = () => {
       setErrorMessage('Lütfen tüm alanları doldurunuz.');
       return;
     }
-    if (topic.length > 70) {
-      setErrorMessage('Başlık en fazla 70 karakter olmalıdır.');
+    if (topic.length > 100) {
+      setErrorMessage('Başlık en fazla 100 karakter olmalıdır.');
       return;
     }
     const dateOfValidity = new Date(validityDate);
@@ -49,14 +49,14 @@ const HaberEkle: React.FC = () => {
   return (
     <div  style={{marginTop:"120px"}} className="container mt-12">
       <h1 className="text-center mb-4" style={{ color: '#333' }}>Haber Ekle</h1>
-      <form onSubmit={handleSubmit} className="w-75 mx-auto"> {/* Formu genişletmek için w-75 ve mx-auto sınıfları eklendi */}
+      <form onSubmit={handleSubmit} className="w-75 mx-auto"> 
         <label className="form-label" style={{ color: '#333', fontWeight: 'bold' }}>Başlık:</label>
         <input
           type="text"
           className="form-control mb-3"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
-          style={{ width: '100%' }} // Genişliği ayarla
+          style={{ width: '100%' }} 
         />
         <label className="form-label" style={{ color: '#333', fontWeight: 'bold' }}>İçerik:</label>
         <textarea
@@ -64,7 +64,7 @@ const HaberEkle: React.FC = () => {
           rows={5}
           value={content}
           onChange={(e) => setContent(e.target.value)}
-          style={{ width: '100%' }} // Genişliği ayarla
+          style={{ width: '100%' }} 
         />
         <label className="form-label" style={{ color: '#333', fontWeight: 'bold' }}>Geçerlilik Tarihi:</label>
         <input
@@ -72,7 +72,7 @@ const HaberEkle: React.FC = () => {
           className="form-control mb-3"
           value={validityDate}
           onChange={(e) => setValidityDate(e.target.value)}
-          style={{ width: '100%' }} // Genişliği ayarla
+          style={{ width: '100%' }} 
         />
         <label className="form-label" style={{ color: '#333', fontWeight: 'bold' }}>Haber Linki:</label>
         <input
@@ -80,7 +80,7 @@ const HaberEkle: React.FC = () => {
           className="form-control mb-3"
           value={newsLink}
           onChange={(e) => setNewsLink(e.target.value)}
-          style={{ width: '100%' }} // Genişliği ayarla
+          style={{ width: '100%' }} 
         />
         <button type="submit" className="btn btn-success w-100 mt-3">Haber Ekle</button>
       </form>

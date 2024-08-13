@@ -7,7 +7,7 @@ import "../App.css";
 
 const NewsList: React.FC = () => {
   const [newsList, setNewsList] = useState<News[]>([]);
-  const [errorMessage, setErrorMessage] = useState<string | null>(null); // Hata mesajı durumu
+  const [errorMessage, setErrorMessage] = useState<string | null>(null); 
   const navigate = useNavigate();
 
   const fetchNews = async () => {
@@ -41,7 +41,7 @@ const NewsList: React.FC = () => {
     if (isConfirmed) {
       try {
         await EventService.deleteNew(id);
-        fetchNews(); // Haberler silindikten sonra verileri yeniden yükle
+        fetchNews(); 
       } catch (error) {
         console.error('Haber silinirken hata oluştu', error);
       }

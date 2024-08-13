@@ -24,7 +24,7 @@ const AdminRoute: React.FC = () => {
   }, [isAdmin, navigate]);
 
   if (!isAdmin) {
-    return null; // Yetkisiz kullanıcılar için hiçbir şey render edilmez.
+    return null; 
   }
 
   return (

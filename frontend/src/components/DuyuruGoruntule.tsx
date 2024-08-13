@@ -12,9 +12,8 @@ const DuyuruGoruntule: React.FC = () => {
         NoticeServices.getAll()
             .then(response => {
                 const updatedDuyurular = response.data.map(notice => {
-                    // `notice.image` Base64 kodlaması içermelidir
                     const imageBase64 = `data:image/jpeg;base64,${notice.image}`;
-                    console.log('Image Base64:', imageBase64); // Hata ayıklama
+                    console.log('Image Base64:', imageBase64); 
                     return { ...notice, image: imageBase64 };
                 });
                 setDuyurular(updatedDuyurular);

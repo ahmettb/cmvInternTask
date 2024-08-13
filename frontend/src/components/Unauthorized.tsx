@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 
 const Unauthorized: React.FC = () => {
   useEffect(() => {
-    document.title = "Unauthorized"; // Örnek işlem
+    document.title = "Unauthorized"; 
   }, []);
 
   return (

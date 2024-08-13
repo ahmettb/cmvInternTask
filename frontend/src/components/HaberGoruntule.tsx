@@ -1,4 +1,4 @@
-import "../styles/tes.css";
+import "../styles/HaberGoruntule.css";
 import React, { useState, useEffect } from 'react';
 import { News } from "../types/New";
 import EventService from "../services/EventService";
@@ -58,7 +58,7 @@ const HaberGoruntule: React.FC = () => {
           </article>
         ))}
 
-        {/* Modal */}
+
         {selectedNew && (
           <div className="modal show d-block" tabIndex={-1} role="dialog">
             <div className="modal-dialog" role="document">

@@ -9,9 +9,9 @@ interface PrivateRouteProps {
 
 const PrivateRoute: React.FC<PrivateRouteProps> = ({ element, adminOnly }) => {
     const token = localStorage.getItem('token');
-    const roles = localStorage.getItem('roles'); // JSON formatında saklıyoruz
+    const roles = localStorage.getItem('roles'); 
 
-    // Eğer roller mevcutsa JSON.parse ile diziyi oluşturun
+   
     const rolesArray = roles ? JSON.parse(roles) : [];
 
     const isAdmin = rolesArray.includes('ADMIN');

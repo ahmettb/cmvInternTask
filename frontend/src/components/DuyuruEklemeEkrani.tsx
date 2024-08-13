@@ -21,7 +21,6 @@ import axios from 'axios';
         const selectedFile = e.target.files[0];
         setFile(selectedFile);
 
-        // Create an image preview
         const reader = new FileReader();
         reader.onloadend = () => {
             setImagePreview(reader.result);
@@ -41,10 +40,8 @@ import axios from 'axios';
             setErrorMessage('Başlık en fazla 50 karakter olmalıdır.');
             return;
           }
-        // Create a new FormData object
         const formData = new FormData();
 
-        // Convert validityDate to a Date object
         const dateOfValidity = new Date(validityDate);
 
         // Create notice object
@@ -54,7 +51,6 @@ import axios from 'axios';
         dateOfValidity: dateOfValidity,
         };
 
-        // Append the notice data as a JSON string
         formData.append('data', JSON.stringify(notice));
 
         // Append the file
@@ -69,7 +65,6 @@ import axios from 'axios';
         }
          catch (error) {
             if (axios.isAxiosError(error)) {
-                // Axios hatası kontrolü
                 if (error.response && error.response.status === 403) {
                     navigate('/unauthorized');
                 } else {
