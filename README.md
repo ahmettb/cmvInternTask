@@ -96,12 +96,12 @@ http://localhost:3000/login
     <img src="images/img_4.png" alt="Admin Paneli Ekran Görüntüsü 3" width="300"/>
   </div>
   <div>
-    <img src="images/img_5.png" alt="Admin Paneli Ekran Görüntüsü 4" width="300"/>
+    <img src="images/img_6.png" alt="Admin Paneli Ekran Görüntüsü 4" width="300"/>
   </div>
 </div>
 <div style="display: flex; flex-wrap: wrap;">
   <div style="margin-right: 10px;">
-    <img src="images/img_6.png" alt="Admin Paneli Ekran Görüntüsü 3" width="300"/>
+    <img src="images/img_5.png" alt="Admin Paneli Ekran Görüntüsü 3" width="300"/>
   </div>
   <div>
     <img src="images/img_7.png" alt="Admin Paneli Ekran Görüntüsü 4" width="300"/>
