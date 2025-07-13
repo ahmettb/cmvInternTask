@@ -1,109 +1,102 @@
-# Proje Adı
+# Project Name
 
-Bu proje, bir derneğin web sitesinde dinamik olarak haberler ve duyuruların yönetilmesini sağlayan bir uygulamadır. 
+This project is an application that enables dynamic management of news and announcements on an association's website.
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
-- **Backend**: Java, Spring Boot,Spring Security, Hibernate, PostgreSQL
+- **Backend**: Java, Spring Boot, Spring Security, Hibernate, PostgreSQL
 - **Frontend**: React, TypeScript, Bootstrap
 
-## Kurulum
+## Installation
 
-### Gereksinimler
+### Requirements
 
-- **Node.js ve npm**: [Node.js'in resmi web sitesinden](https://nodejs.org) indirin ve yükleyin.
-- **Java Development Kit (JDK)**: [JDK 22'yi](https://www.oracle.com/java/technologies/javase-jdk22-downloads.html) indirin ve yükleyin.
+- **Node.js and npm**: Download and install from [Node.js official website](https://nodejs.org).
+- **Java Development Kit (JDK)**: Download and install [JDK 22](https://www.oracle.com/java/technologies/javase-jdk22-downloads.html).
 - **IDE**: IntelliJ IDEA
 
-## Proje Kurulumu
+## Project Setup
 
+### 1. Download the Project with Git
 
-
-
-### 1. Projeyi Git ile İndirin
-
-Öncelikle, projenizi Git kullanarak yerel bilgisayarınıza klonlayın. Terminal veya komut istemcisine şu komutu girin:
+First, clone your project to your local computer using Git. Enter the following command in your terminal or command prompt:
 
 ```bash
-git clone https://github.com/ahmettb/cmvInternTask.git
+git clone https://github.com/ahmettb/news-website-app.git
 ```
 
-### 2. IntelliJ IDEA'da Projeyi Açın
+### 2. Open the Project in IntelliJ IDEA
 
-- **Java SDK ve Lombok Kurulumu**:
+- **Java SDK and Lombok Installation**:
     - **Java SDK**:
-        - `File > Project Structure` menüsünden JDK 22'yi seçin.
+        - Select JDK 22 from `File > Project Structure` menu.
     - **Lombok**:
-        - `Settings > Plugins` kısmına gidin ve Lombok'u yükleyin.
+        - Go to `Settings > Plugins` and install Lombok.
 
-- **Backend Projesini İçe Aktarın**:
-    - `File > New > Module from Existing Sources` ile backend projesini içe aktarın.
-    - `src/main/resources/application.properties` dosyasında veritabanı bilgilerini girin.
+- **Import Backend Project**:
+    - Import the backend project using `File > New > Module from Existing Sources`.
+    - Enter database information in the `src/main/resources/application.properties` file.
 
-### 3. Frontend Bağımlılıklarını Yükleyin
+### 3. Install Frontend Dependencies
 
-Terminalde frontend klasörüne gidin:
+Navigate to the frontend folder in the terminal:
 
 ```bash
 cd path/to/frontend
 npm install
 ```
 
-### 4. Projeyi Çalıştırın
+### 4. Run the Project
 
-- **Backend**: CmvInternTaskApplication sınıfından projeyi çalıştırın
+- **Backend**: Run the project from the CmvInternTaskApplication class
 
-
-
-- **Frontend**: Terminalde frontend klasörüne gidin ve aşağıdaki komutu çalıştırın:
+- **Frontend**: Navigate to the frontend folder in the terminal and run the following command:
 
 ```bash
 npm start
 ```
 
-### 5. Admin Paneli
- Projeyi çalıştırdıktan sonra Admin Paneli giriş ekranına gitmek için
-şu adrese gidin:
+### 5. Admin Panel
+ After running the project, to access the Admin Panel login screen, go to:
 ```bash
 http://localhost:3000/login
 ```
-- Kullanıcı Adı: **admin**
-- Şifre: **admin123**
+- Username: **admin**
+- Password: **admin123**
  
-### Uygulama Ekran Görüntüleri
-
+### Application Screenshots
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="margin-right: 10px;">
-    <img src="images/img.png" alt="Admin Paneli Ekran Görüntüsü 1" width="300"/>
+    <img src="images/img.png" alt="Admin Panel Screenshot 1" width="300"/>
   </div>
   <div>
-    <img src="images/img_1.png" alt="Admin Paneli Ekran Görüntüsü 2" width="300"/>
+    <img src="images/img_1.png" alt="Admin Panel Screenshot 2" width="300"/>
   </div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="margin-right: 10px;">
-    <img src="images/img_2.png" alt="Admin Paneli Ekran Görüntüsü 3" width="300"/>
+    <img src="images/img_2.png" alt="Admin Panel Screenshot 3" width="300"/>
   </div>
   <div>
-    <img src="images/img_3.png" alt="Admin Paneli Ekran Görüntüsü 4" width="300"/>
+    <img src="images/img_3.png" alt="Admin Panel Screenshot 4" width="300"/>
   </div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="margin-right: 10px;">
-    <img src="images/img_4.png" alt="Admin Paneli Ekran Görüntüsü 3" width="300"/>
+    <img src="images/img_4.png" alt="Admin Panel Screenshot 5" width="300"/>
   </div>
   <div>
-    <img src="images/img_6.png" alt="Admin Paneli Ekran Görüntüsü 4" width="300"/>
+    <img src="images/img_6.png" alt="Admin Panel Screenshot 6" width="300"/>
   </div>
 </div>
 <div style="display: flex; flex-wrap: wrap;">
   <div style="margin-right: 10px;">
-    <img src="images/img_5.png" alt="Admin Paneli Ekran Görüntüsü 3" width="300"/>
+    <img src="images/img_5.png" alt="Admin Panel Screenshot 7" width="300"/>
   </div>
   <div>
-    <img src="images/img_7.png" alt="Admin Paneli Ekran Görüntüsü 4" width="300"/>
+    <img src="images/img_7.png" alt="Admin Panel Screenshot 8" width="300"/>
   </div>
 </div>
