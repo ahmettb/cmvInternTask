@@ -1,4 +1,4 @@
-# Project Name
+# News Website Application
 
 This project is an application that enables dynamic management of news and announcements on an association's website.
 
